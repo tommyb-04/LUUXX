@@ -16,19 +16,53 @@
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">
+  <link rel="preload" href="https://use.typekit.net/wbz2boq.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">
+  </noscript>
+
+  <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  </noscript>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css">
+
+  <!-- Fonts from Adobe -->
+
+  <!--<link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">-->
 
   <!-- Icons -->
+
   <link rel="icon" href="images/logo-2-gold-nt.svg">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">-->
 
   <!-- Preload Images -->
+
   <link rel="preload" as="image" href="images/1.webp">
+
 </head>
 
 <body>
+
+  <!-- Loading Overlay -->
+
+  <div class="load-overlay">
+    <div class="load-overlay-content">
+      <div class="load-rect ld ld-beat">
+        <img src="images/luuxx-logo-navy-gallery.svg" alt="LUUXX Second Option Logo" class="load-logo">
+      </div>
+      <br>
+    </div>
+
+    <p class="loading-text-bounce">
+      Loading...
+    </p>
+
+  </div>
+
+  <!-- Navigation Bar -->
 
   <div class="lu_nav" id="lu_navbar">
     <a href="home.html" class="lu_logo-link"><img src="images/logo-gold.svg" alt="" class="lu_logo-img" width="150" height="110"></a>
@@ -300,12 +334,9 @@
       <div class="footer-section footer-section-2">
 
         <div class="footer-section-information">
-          <p class="lu_address">Birch House,<br>
-            Wetherby Road,<br>
-            Scarcroft,<br>
+          <p class="lu_address">
             Leeds,<br>
-            Yorkshire,<br>
-            LS14 3BR
+            West Yorkshire
           </p>
         </div>
       </div>
@@ -342,12 +373,9 @@
       <a href="https://cedia.net/"><img src="images/cedia-member-logo-color.svg" alt="Cedia Member Logo" class="lu_footer-logo-mobile cedia-member-mobile"></a>
     </div>
 
-    <p class="lu_address-mobile">Birch House,<br>
-      Wetherby Road,<br>
-      Scarcroft,<br>
+    <p class="lu_address-mobile">
       Leeds,<br>
-      Yorkshire,<br>
-      LS14 3BR
+      West Yorkshire
     </p>
 
     <hr class="lu_footer-mobile-line">

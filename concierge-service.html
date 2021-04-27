@@ -16,17 +16,29 @@
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/footer.css">
 
+  <link rel="preload" href="https://use.typekit.net/wbz2boq.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">
+  </noscript>
+
+  <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  </noscript>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css">
+
   <!-- Fonts from Adobe -->
 
-  <link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">
+  <!--<link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">-->
 
   <!-- Icons -->
 
   <link rel="icon" href="images/logo-2-gold-nt.svg">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">-->
 
-  <!-- Preload Images for Header Slideshow -->
+  <!-- Preload Images -->
 
   <link rel="preload" as="image" href="images/2400x1600/branded-van.webp">
   <link rel="preload" as="image" href="images//backgrounds/luuxx-nude-name.svg">
@@ -34,6 +46,24 @@
 </head>
 
 <body>
+
+  <!-- Loading Overlay -->
+
+  <div class="load-overlay">
+    <div class="load-overlay-content">
+      <div class="load-rect ld ld-beat">
+        <img src="images/luuxx-logo-navy-concierge.svg" alt="LUUXX Second Option Logo" class="load-logo">
+      </div>
+      <br>
+    </div>
+
+    <p class="loading-text-bounce">
+      Loading...
+    </p>
+
+  </div>
+
+  <!-- Navigation Bar -->
 
   <div class="lu_nav" id="lu_navbar">
     <a href="home.html" class="lu_logo-link"><img src="images/logo-gold.svg" alt="" class="lu_logo-img" width="150" height="110"></a>
@@ -100,18 +130,66 @@
   <div class="concierge-service-list" id="concierge-covers">
     <h2 class="grid-title">Our discreet, comprehensive cover guarantees:</h2>
     <div class="concierge-grid">
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-tools concierge-icons"></i><p>Fixed rate servicing and tech management</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-phone concierge-icons"></i><p>Access to helpdesk and ticketing system</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-shuttle-van concierge-icons"></i><p>On site engineer support when needed</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-exclamation-triangle concierge-icons"></i><p>Round the clock remote monitoring and error detection</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-users concierge-icons"></i><p>One to one user training</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-wrench concierge-icons"></i><p>‘Courtesy components’ – loan of equipment during repairs</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-hand-paper concierge-icons"></i><p>Routine white-glove home visits to ensure optimal hardware and mechanism operations, and for minor programming updates</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-sync-alt concierge-icons"></i><p>Seamless software updates</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-wifi concierge-icons"></i><p>Internet speed and usage monitoring and options for 4G backup</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-shield-alt concierge-icons"></i><p>Optional Cyber Security package, keeping your data and equipment safe</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-tasks concierge-icons"></i><p>Regular reviews of software improvements and security updates</p></div></div>
-      <div class="concierge-grid-child"><div class="grid-components"><i class="fas fa-heartbeat concierge-icons"></i><p>Systems health reports, preventative checks, cleaning and adjusting</p></div></div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-tools concierge-icons"></i>
+          <p>Fixed rate servicing and tech management</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-phone concierge-icons"></i>
+          <p>Access to helpdesk and ticketing system</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-shuttle-van concierge-icons"></i>
+          <p>On site engineer support when needed</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-exclamation-triangle concierge-icons"></i>
+          <p>Round the clock remote monitoring and error detection</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-users concierge-icons"></i>
+          <p>One to one user training</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-wrench concierge-icons"></i>
+          <p>‘Courtesy components’ – loan of equipment during repairs</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-hand-paper concierge-icons"></i>
+          <p>Routine white-glove home visits to ensure optimal hardware and mechanism operations, and for minor programming updates</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-sync-alt concierge-icons"></i>
+          <p>Seamless software updates</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-wifi concierge-icons"></i>
+          <p>Internet speed and usage monitoring and options for 4G backup</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-shield-alt concierge-icons"></i>
+          <p>Optional Cyber Security package, keeping your data and equipment safe</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-tasks concierge-icons"></i>
+          <p>Regular reviews of software improvements and security updates</p>
+        </div>
+      </div>
+      <div class="concierge-grid-child">
+        <div class="grid-components"><i class="fas fa-heartbeat concierge-icons"></i>
+          <p>Systems health reports, preventative checks, cleaning and adjusting</p>
+        </div>
+      </div>
       <!--<div class="concierge-grid-child"><i class="fas fa-comments concierge-icons"></i><p>Loan equipment and user advice support</p></div>-->
     </div>
   </div>
