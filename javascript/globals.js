@@ -4,8 +4,14 @@ $(window).on("load", function() {
   setTimeout(
     function() {
       $(".load-overlay").fadeOut();
-    }, 1000);
-  });
+    }, 300);
+});
+
+// Loading Logo Bounce
+
+setTimeout(function() {
+  $(".ld").css("animation-play-state", "paused");
+}, 10000);
 
 
 // Scroll Top button
