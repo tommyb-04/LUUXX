@@ -19,8 +19,8 @@ body {
 
 .countdown-background-overlay {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background: linear-gradient(to right bottom, rgba(8, 27, 44, 0.90) 50%, rgba(8, 27, 44, 0.855) 50%);
 }
 
