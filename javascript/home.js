@@ -1,7 +1,6 @@
 $(document).ready(function() {
     var isshown = localStorage.getItem('isshown');
-    isshown = 'test';
-    if (isshown == 'test') {
+    if (isshown == null) {
         localStorage.setItem('isshown', 1);
         // Show popup here
         $("#dialog-box").css("display", "block");
@@ -9,7 +8,6 @@ $(document).ready(function() {
     $("#ok-button").click(function() {
       $("#dialog-box").fadeOut();
     });
-    console.log(isshown);
 });
 
 // Scroll the information section into view on home page
