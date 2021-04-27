@@ -1,0 +1,347 @@
+.header {
+  height: calc(100vh - 110px);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-image: url("../images/2400x1600/luuxx-screen-cinema.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.header-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right bottom, rgba(8, 27, 44, 0.90) 50%, rgba(8, 27, 44, 0.855) 50%);
+}
+
+.lu_header-text {
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.lu_header-text p {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  color: #997E49;
+  margin: 2px 0;
+}
+
+.lu_header-logo {
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.lu_header-line {
+  border: 0;
+  border-bottom: 1px solid #997E49;
+  width: 10%;
+  margin: 20px auto;
+  font-weight: 400;
+}
+
+.lu_header-text-size-2 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/* Information Section */
+.information-section {
+  padding: 10vh 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.information-child {
+  padding: 0;
+  position: relative;
+  min-height: 20vh;
+}
+
+.information-text {
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0d2d49;
+}
+
+.information-text p {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0d2d49;
+  margin: 0 0 40px 0;
+}
+
+.information-text hr {
+  margin: 0 auto 40px auto;
+  width: 10%;
+  border: 0;
+  border-bottom: 1px solid #0d2d49;
+}
+
+.information-section-image {
+  background-image: url("../images/2400x1600/luuxx-screen-cinema.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.information-section-image-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgrounds/luuxx-navy-name.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  opacity: 0;
+  transition: .8s;
+}
+
+.information-section-image-overlay p {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  left: 5%;
+  top: 10%;
+  position: absolute;
+}
+
+.information-section-image:hover>.information-section-image-overlay {
+  opacity: 0.8;
+  transition: .8s;
+}
+
+.blue-background {
+  background-image: url("../images/backgrounds/luuxx-light-blue-name.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
+}
+
+.grid-title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  line-height: 10vh;
+  margin: 0;
+  color: #0d2d49;
+}
+
+.brands-grid-holder {
+  width: 80vw;
+  overflow-y: auto;
+  overflow-x: none;
+  height: 20vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.brands-grid {
+  width: 240vw;
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.brands-grid-holder::-webkit-scrollbar, .brands-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-item {
+  background-color: #c7d7df;
+  min-width: 20vw;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.brand-item:after {
+  content: '';
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  background-color: #8eaebf;
+}
+
+.brand-item:last-child:after {
+  width: 0;
+}
+
+.brand-logo {
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.brand-logo:hover {
+  cursor: pointer;
+}
+
+.control-4-logo, .rako-logo {
+  height: 25%;
+}
+
+.wisdom-logo {
+  width: 20%;
+}
+
+.dolby-logo {
+  width: 15%;
+}
+
+.scroll-btn-side {
+  font-size: 20px;
+  height: 50px;
+  background-color: #8eaebf;
+  color: #c7d7df;
+  width: 50px;
+  text-align: center;
+  opacity: 0.9;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.scroll-btn-side:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: .5s;
+  background-color: #475760;
+}
+
+.scroll-btn-side i {
+  line-height: 50px;
+}
+
+#right-button {
+  right: 3vw;
+  border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+}
+
+#left-button {
+  left: 3vw;
+  border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .blue-background {
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+
+  .lu_header-text {
+    width: 60%;
+  }
+
+  .information-text {
+    width: 50%;
+  }
+
+  .brand-item {
+    min-width: 40vw;
+  }
+
+  .scroll-btn-side {
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .scroll-btn-side i {
+    line-height: 30px;
+  }
+
+  #right-button {
+    right: 2vw;
+  }
+
+  #left-button {
+    left: 2vw;
+  }
+
+  .brands-grid-holder {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .brands-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 480vw;
+  }
+
+  .brands-grid-holder::-webkit-scrollbar, .brands-grid::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: calc(100vh - 80px);
+    width: 100%;
+    color: #fff;
+    position: relative;
+  }
+
+  .lu_header-text {
+    width: 80%;
+  }
+
+  .information-text {
+    width: 90%;
+  }
+
+  .scroll-btn-side {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .scroll-btn-side i {
+    line-height: 20px;
+  }
+}

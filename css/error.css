@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../images/2400x1600/error.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+p {
+  color: #997E49;
+  font-family: garamond-premier-pro, serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0 auto 10px auto;
+  width: 80%;
+}
+
+.line-2 {
+  font-size: 20px;
+}
+
+.error-message {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 30vw;
+}
+
+.message-container {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+#lu_go-home {
+  border: 1px solid #997E49;
+  border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+  color: #997E49;
+  height: 50px;
+  margin: 30px auto;
+  width: 50px;
+  text-align: center;
+  z-index: 5;
+}
+
+#lu_go-home i {
+  line-height: 50px;
+  font-size: 15px;
+  margin: 0;
+}
+
+#lu_go-home:hover {
+  cursor: pointer;
+  background-color: #997E49;
+  color: #fff;
+  transition: all 0.8s;
+}
+
+@media screen and (max-width:1024px) {
+  .error-message {
+    height: 40vh;
+    top: 40px;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width:500px) {
+  body {
+    background-image: url("../images/2400x1600/error-mobile.jpg");
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto 5px auto;
+  }
+
+  .line-2 {
+    font-size: 14px;
+  }
+  .error-message {
+    height: 30vh;
+    top: 40px;
+    width: 100vw;
+  }
+  #lu_go-home {
+    height: 30px;
+    margin: 15px auto;
+    width: 30px;
+  }
+
+  #lu_go-home i {
+    line-height: 30px;
+    font-size: 10px;
+  }
+}

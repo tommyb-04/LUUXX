@@ -1,0 +1,214 @@
+
+/* Footer Section split into Mobile and Desktop Views */
+
+footer p, footer a, footer hr {
+  color: #8eaebf;
+  font-family: garamond-premier-pro, serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+  transition: color .5s;
+  line-height: 130%;
+}
+
+footer a:hover {
+  color: #637a86;
+  transition: color .5s;
+}
+
+.lu_footer-desktop {
+  height: 20vh;
+  overflow: hidden;
+}
+
+.lu_footer-mobile {
+  display: none;
+}
+
+.inner-footer {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.footer-section-information {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer-section-split:first-child {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+.footer-section-split:last-child {
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+
+.lu_footer-logo {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  transition: .5s;
+}
+
+.cedia-member {
+  top: 0;
+  height: 60%;
+}
+
+.lu_logo-hover {
+  z-index: 5;
+  opacity: 0;
+  transition: .5s;
+}
+
+.lu_logo-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cedia-member:hover {
+  opacity: 0.4;
+}
+
+.lu_social-holder {
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.lu_social {
+  margin: 10px;
+  transition: color .5s;
+}
+
+.lu_social:hover {
+  color: #637a86;
+  transition: color .5s;
+  cursor: pointer;
+}
+
+/*--- Mobile Footer ---*/
+.lu_footer-mobile {
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+.lu_footer-mobile-logo-holder {
+  width: 100%;
+  position: relative;
+}
+
+.lu_footer-mobile-logo-holder:first-child {
+  height: 150px;
+}
+
+.lu_footer-mobile-logo-holder:nth-child(2) {
+  height: 110px;
+}
+
+.lu_footer-logo-mobile {
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.cedia-member-mobile {
+  top: 50%;
+  width: 15%;
+  transition: .5s;
+}
+
+.cedia-member-mobile:hover {
+  opacity: 0.4;
+  transition: .5s;
+}
+
+.lu_social-holder-mobile {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.lu_footer-mobile-line {
+  width: 40%;
+  margin: 30px auto;
+  border-top: 1px solid #8eaebf;
+  border-bottom: 0;
+}
+
+/* Responsive Media Queries for Mobile and Tablets */
+
+@media screen and (max-width: 1600px) {
+
+  footer p, footer a, footer hr {
+    font-size: 15px;
+  }
+
+  .inner-footer {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  footer p, footer a, footer hr {
+    font-size: 20px;
+  }
+
+  .lu_footer-desktop {
+    display: none;
+  }
+
+  .lu_footer-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  footer p, footer a, footer hr {
+    font-size: 15px;
+  }
+
+  .lu_footer-logo-mobile {
+    width: 60%;
+  }
+
+  .cedia-member-mobile {
+    top: 50%;
+    width: 35%;
+  }
+}

@@ -1,0 +1,195 @@
+
+/* Navigation Bar */
+
+.lu_nav {
+  overflow: hidden;
+  background-color: #081B2C;
+  background-image: url("../images/backgrounds/luuxx-blue-dots.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+  z-index: 5;
+}
+
+.lu_logo-link {
+  padding: 0;
+  line-height: 0 !important;
+}
+
+.lu_logo-img {
+  padding-left: 14px;
+  line-height: 0 !important;
+}
+
+.lu_nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 110px;
+  color: #997E49;
+  transition: color .5s;
+}
+
+.active {
+  color: #FFDF80 !important;
+}
+
+.lu_nav .lu_menu-icon {
+  display: none;
+}
+
+.lu_nav-dropdown {
+  float: left;
+  overflow: hidden;
+  line-height: 110px;
+}
+
+.lu_nav-dropdown .lu_nav-dropdown-button {
+  font-size: 17px;
+  border: none;
+  color: #997E49;
+  padding: 0 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  line-height: 110px;
+  transition: .5s;
+}
+
+.lu_nav-dropdown .lu_nav-dropdown-button:focus {
+  outline: none;
+  border: none;
+}
+
+.lu_nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #091f33;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.lu_nav-dropdown-content a {
+  float: none;
+  color: #997E49;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 40px;
+  transition: .5s;
+}
+
+.lu_nav-dropdown:hover .lu_nav-dropdown-button {
+  color: #FFDF80;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.lu_nav a:hover {
+  color: #FFDF80;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.lu_nav-dropdown-content a:hover {
+  background-color: #8eaebf;
+  transition: .5s;
+  color: #0D2D49;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Responsive Navigation Menu */
+
+  .lu_logo-img {
+    margin-left: -20px;
+  }
+
+  .lu_nav a:not(:first-child), .lu_nav-dropdown .lu_nav-dropdown-button {
+    display: none;
+  }
+
+  .lu_nav a.lu_menu-icon {
+    float: right;
+    display: block;
+    background-color: transparent;
+  }
+
+  .lu_nav.responsive {
+    position: relative;
+    z-index: 100;
+  }
+
+  .lu_nav.responsive .lu_menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 110px;
+  }
+
+  .lu_nav.responsive a {
+    float: none;
+    display: block;
+    line-height: 60px;
+  }
+
+  .lu_nav.responsive .lu_logo-link {
+    text-align: left;
+  }
+
+  .lu_nav.responsive .lu_nav-links {
+    text-align: center;
+    background-color: rgb(8, 27, 44);
+  }
+
+  .lu_nav.responsive .lu_nav-dropdown {
+    float: none;
+  }
+
+  .lu_nav.responsive .lu_nav-dropdown-content {
+    position: relative;
+  }
+
+  .lu_nav.responsive .lu_nav-dropdown .lu_nav-dropdown-button {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    padding: 0 30px;
+  }
+
+  .lu_nav.responsive .lu_nav-dropdown-content a {
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .lu_logo-img {
+    height: 80px;
+  }
+
+  .lu_nav a {
+    line-height: 80px;
+  }
+
+  .lu_nav-dropdown {
+    line-height: 80px;
+  }
+
+  .lu_nav-dropdown .lu_nav-dropdown-button {
+    line-height: 80px;
+  }
+  .lu_nav.responsive .lu_menu-icon {
+    line-height: 80px;
+  }

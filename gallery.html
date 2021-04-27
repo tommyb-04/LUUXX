@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>LUUXX - Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUUXX – our gallery shows a range of home technology schemes.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="LUUXX">
+
+  <!-- Stylesheets -->
+
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/wbz2boq.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="images/logo-2-gold-nt.svg">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="images/1.webp">
+</head>
+
+<body>
+
+  <div class="lu_nav" id="lu_navbar">
+    <a href="home.html" class="lu_logo-link"><img src="images/logo-gold.svg" alt="" class="lu_logo-img" width="150" height="110"></a>
+    <a href="about.html" class="lu_nav-links">About</a>
+    <a href="services.html" class="lu_nav-links">Services</a>
+    <a href="projects.html" class="lu_nav-links">Projects</a>
+    <div class="lu_nav-dropdown lu_nav-links">
+      <button class="lu_nav-dropdown-button">Packages
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="lu_nav-dropdown-content">
+        <a href="cinema-packages.html">Cinema Room Packages</a>
+        <a href="media-packages.html">Media Room Packages</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="lu_nav-links active">Gallery</a>
+    <a href="concierge-service.html" class="lu_nav-links">Concierge</a>
+    <a href="contact.html" class="lu_nav-links">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="lu_menu-icon">&#9776;</a>
+  </div>
+
+  <!-- Scroll to Top Button -->
+
+  <div id="lu_scroll-top">
+    <p>TOP</p>
+  </div>
+
+  <div class="gallery-explanation">
+    <p>
+      A picture really is worth more than a thousand words.<br>
+      Our gallery shows a range of recent home technology assignments, completed for customers, by L<span class="small">UUXX</span>&#8230;
+    </p>
+  </div>
+
+  <div class="lu_gallery">
+    <div class="column">
+      <img src="images/gallery/wide/cinema-screen-remote-wide.webp" style="width:100%" class="this-img" alt="Artcoustic cinema with Crestron control" onclick="openModal();currentSlide(1)">
+      <img src="images/gallery/tall/bathroom-tv-tall.webp" style="width:100%" class="this-img" alt="Aquavision bathroom TV" onclick="openModal();currentSlide(2)">
+      <img src="images/gallery/wide/garden-audio-wide.webp" style="width:100%" class="this-img" alt="Sonance garden speaker system" onclick="openModal();currentSlide(3)">
+      <img src="images/gallery/tall/pool-table-dark-tall.webp" style="width:100%" class="this-img" alt="Entertainment room with Svant and Lutron control" onclick="openModal();currentSlide(4)">
+      <img src="images/gallery/wide/bathroom-speaker-wide.webp" style="width:100%" class="this-img" alt="Bathroom with Sonance in ceiling speaker" onclick="openModal();currentSlide(5)">
+      <img src="images/gallery/tall/entry-pad-tall.webp" style="width:100%" class="this-img" alt="Savant door entry" onclick="openModal();currentSlide(6)">
+    </div>
+
+    <div class="column">
+      <img src="images/gallery/tall/keypad-tall.webp" style="width:100%" class="this-img" alt="Lutron lighting keypad" onclick="openModal();currentSlide(7)">
+      <img src="images/gallery/wide/cinema-screen-wide.webp" style="width:100%" class="this-img" alt="Kaleidescape movie server interface" onclick="openModal();currentSlide(8)">
+      <img src="images/gallery/tall/remote-tall.webp" style="width:100%" class="this-img" alt="Control 4 Neeo Remote" onclick="openModal();currentSlide(9)">
+      <img src="images/gallery/wide/dressing-room-wide.webp" style="width:100%" class="this-img" alt="Dressing room with Sonance in ceiling speakers" onclick="openModal();currentSlide(10)">
+      <img src="images/gallery/tall/security-camera-tall.webp" style="width:100%" class="this-img" alt="Lilin CCTV" onclick="openModal();currentSlide(11)">
+      <img src="images/gallery/wide/kitchen-wide.webp" style="width:100%" class="this-img" alt="Kitchen with Control 4 automation" onclick="openModal();currentSlide(12)">
+    </div>
+
+    <div class="column">
+      <img src="images/gallery/wide/outdoor-speaker-door-wide.webp" style="width:100%" class="this-img" alt="Monitor Audio outdoor speakers" onclick="openModal();currentSlide(13)">
+      <img src="images/gallery/tall/speaker-black-tall.webp" style="width:100%" class="this-img" alt="Monitor Audio on wall speaker" onclick="openModal();currentSlide(14)">
+      <img src="images/gallery/wide/living-room-tv-wide.webp" style="width:100%" class="this-img" alt="Luxury living room with Lutron and Control 4 automation" onclick="openModal();currentSlide(15)">
+      <img src="images/gallery/tall/staircase-lighting-tall.webp" style="width:100%" class="this-img" alt="Luxury lakeside home with Lutron lighting" onclick="openModal();currentSlide(16)">
+      <img src="images/gallery/wide/tablet-home-wide.webp" style="width:100%" class="this-img" alt="Savant home automation" onclick="openModal();currentSlide(17)">
+      <img src="images/gallery/tall/touchscreen-keypad-tall.webp" style="width:100%" class="this-img" alt="Savant in wall touchscreen" onclick="openModal();currentSlide(18)">
+    </div>
+
+    <div class="column">
+      <img src="images/gallery/tall/wine-cellar-tall.webp" style="width:100%" class="this-img" alt="Wine fridge with Lutron lighting" onclick="openModal();currentSlide(19)">
+      <img src="images/gallery/wide/pool-table-media-wide.webp" style="width:100%" class="this-img" alt="Entertainment room with Control 4 automation" onclick="openModal();currentSlide(20)">
+      <img src="images/gallery/tall/cinema-screen-doorway-lighting-tall.webp" style="width:100%" class="this-img" alt="Luxury home cinema and bar with Control 4 automation" onclick="openModal();currentSlide(21)">
+      <img src="images/gallery/wide/tv-wall-wide.webp" style="width:100%" class="this-img" alt="HDANYWHERE video distribution with Savant automation" onclick="openModal();currentSlide(22)">
+      <img src="images/gallery/tall/cabling-coloured-tall.webp" style="width:100%" class="this-img" alt="Cable infrastructure" onclick="openModal();currentSlide(23)">
+      <img src="images/gallery/wide/stairs-wide.webp" style="width:100%" class="this-img" alt="Bespoke stairs featuring Rako lighting control" onclick="openModal();currentSlide(24)">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()"><i class="fas fa-times"></i></span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="lu_img-number">1 / 24</div>
+        <img src="images/gallery/full-modal/cinema-screen-remote-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.artcoustic.com/" class="in-text-link" target="_blank">Artcoustic</a> cinema with <a href="https://www.crestron.com/" class="in-text-link" target="_blank">Crestron</a> control</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">2 / 24</div>
+        <img src="images/gallery/full-modal/bathroom-tv-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://aquavision.tv/" class="in-text-link" target="_blank">Aquavision</a> bathroom TV</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">3 / 24</div>
+        <img src="images/gallery/full-modal/garden-audio-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.sonance.com/" class="in-text-link" target="_blank">Sonance</a> garden speaker system</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">4 / 24</div>
+        <img src="images/gallery/full-modal/pool-table-dark-full.webp">
+        <div class="caption-container">
+          <p class="caption">Entertainment room with <a href="https://www.savant.com/" class="in-text-link" target="_blank">Savant</a> and <a href="https://www.lutron.com/europe/pages/default.aspx" class="in-text-link" target="_blank">Lutron</a> control</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">5 / 24</div>
+        <img src="images/gallery/full-modal/bathroom-speaker-full.webp">
+        <div class="caption-container">
+          <p class="caption">Bathroom with <a href="https://www.sonance.com/" class="in-text-link" target="_blank">Sonance</a> in ceiling speaker</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">6 / 24</div>
+        <img src="images/gallery/full-modal/entry-pad-full.png">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.savant.com/" class="in-text-link" target="_blank">Savant</a> door entry</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">7 / 24</div>
+        <img src="images/gallery/full-modal/keypad-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.lutron.com/europe/pages/default.aspx" class="in-text-link" target="_blank">Lutron</a> lighting keypad</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">8 / 24</div>
+        <img src="images/gallery/full-modal/cinema-screen-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.kaleidescape.com/" class="in-text-link" target="_blank">Kaleidescape</a> movie server interface</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">9 / 24</div>
+        <img src="images/gallery/full-modal/remote-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.control4.com/" class="in-text-link" target="_blank">Control 4</a> Neeo Remote</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">10 / 24</div>
+        <img src="images/gallery/full-modal/dressing-room-full.webp">
+        <div class="caption-container">
+          <p class="caption">Dressing room with <a href="https://www.sonance.com/" class="in-text-link" target="_blank">Sonance</a> in ceiling speakers</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">11 / 24</div>
+        <img src="images/gallery/full-modal/security-camera-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.meritlilin.com/" class="in-text-link" target="_blank">LILIN</a> CCTV camera</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">12 / 24</div>
+        <img src="images/gallery/full-modal/kitchen-full.webp">
+        <div class="caption-container">
+          <p class="caption">Kitchen with <a href="https://www.control4.com/" class="in-text-link" target="_blank">Control 4</a> automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">13 / 24</div>
+        <img src="images/gallery/full-modal/outdoor-speaker-door-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.monitoraudio.com/" class="in-text-link" target="_blank">Monitor Audio</a> outdoor speakers</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">14 / 24</div>
+        <img src="images/gallery/full-modal/speaker-black-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.monitoraudio.com/" class="in-text-link" target="_blank">Monitor Audio</a> on wall speaker</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">15 / 24</div>
+        <img src="images/gallery/full-modal/living-room-tv-full.webp">
+        <div class="caption-container">
+          <p class="caption">Luxury living room with <a href="https://www.lutron.com/europe/pages/default.aspx" class="in-text-link" target="_blank">Lutron</a> and <a href="https://www.control4.com/" class="in-text-link" target="_blank">Control 4</a> automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">16 / 24</div>
+        <img src="images/gallery/full-modal/staircase-lighting-full.webp">
+        <div class="caption-container">
+          <p class="caption">Luxury lakeside home with <a href="https://www.lutron.com/europe/pages/default.aspx" class="in-text-link" target="_blank">Lutron</a> lighting</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">17 / 24</div>
+        <img src="images/gallery/full-modal/tablet-home-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.savant.com/" class="in-text-link" target="_blank">Savant</a> home automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">18 / 24</div>
+        <img src="images/gallery/full-modal/touchscreen-keypad-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://www.savant.com/" class="in-text-link" target="_blank">Savant</a> in wall touchscreen</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">19 / 24</div>
+        <img src="images/gallery/full-modal/wine-cellar-full.webp">
+        <div class="caption-container">
+          <p class="caption">Wine fridge with <a href="https://www.lutron.com/europe/pages/default.aspx" class="in-text-link" target="_blank">Lutron</a> lighting</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">20 / 24</div>
+        <img src="images/gallery/full-modal/pool-table-media-full.webp">
+        <div class="caption-container">
+          <p class="caption">Entertainment room with <a href="https://www.control4.com/" class="in-text-link" target="_blank">Control 4</a> automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">21 / 24</div>
+        <img src="images/gallery/full-modal/cinema-screen-doorway-lighting-full.webp">
+        <div class="caption-container">
+          <p class="caption">Luxury home cinema and bar with <a href="https://www.control4.com/" class="in-text-link" target="_blank">Control 4</a> automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">22 / 24</div>
+        <img src="images/gallery/full-modal/tv-wall-full.webp">
+        <div class="caption-container">
+          <p class="caption"><a href="https://hdanywhere.com/" class="in-text-link" target="_blank">HDANYWHERE</a> video distribution with <a href="https://www.savant.com/" class="in-text-link" target="_blank">Savant</a> automation</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">23 / 24</div>
+        <img src="images/gallery/full-modal/cabling-coloured-full.webp">
+        <div class="caption-container">
+          <p class="caption">Cable infrastructure</p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="lu_img-number">24 / 24</div>
+        <img src="images/gallery/full-modal/stairs-full.webp">
+        <div class="caption-container">
+          <p class="caption">Bespoke stairs featuring <a href="https://rakocontrols.com/" class="in-text-link" target="_blank">Rako</a> lighting control</p>
+        </div>
+      </div>
+
+      <a class="lu_prev-btn" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></a>
+      <a class="lu_next-btn" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></a>
+
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+
+  <footer class="lu_footer-desktop">
+
+    <div class="inner-footer">
+
+      <div class="footer-section footer-section-1">
+
+        <div class="footer-section-split">
+          <a href="home.html"><img src="images/luuxx-logo-2-footer.svg" alt="LUUXX Logo" class="lu_footer-logo"></a>
+          <a href="home.html"><img src="images/luuxx-logo-2-footer-hover.svg" alt="LUUXX Logo" class="lu_footer-logo lu_logo-hover"></a>
+        </div>
+
+        <div class="footer-section-split">
+          <a href="https://cedia.net/"><img src="images/cedia-member-logo-color.svg" alt="LUUXX Logo" class="lu_footer-logo cedia-member"></a>
+        </div>
+      </div>
+
+      <div class="footer-section footer-section-2">
+
+        <div class="footer-section-information">
+          <p class="lu_address">Birch House,<br>
+            Wetherby Road,<br>
+            Scarcroft,<br>
+            Leeds,<br>
+            Yorkshire,<br>
+            LS14 3BR
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-section footer-section-3">
+        <div class="footer-section-information">
+          <p><a href="tel:0113 873 0305">0113 873 0305</a></p>
+          <p><a href="mailto:sales@luuxx.co.uk">sales@luuxx.co.uk</a></p>
+        </div>
+      </div>
+
+      <div class="footer-section footer-section-3">
+        <div class="lu_social-holder">
+          <i class="fab fa-facebook-f lu_social"></i>
+          <i class="fab fa-twitter lu_social"></i>
+          <i class="fab fa-instagram lu_social"></i>
+          <i class="fab fa-linkedin lu_social"></i>
+          <i class="fab fa-pinterest-p lu_social"></i>
+          <i class="fab fa-houzz lu_social"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <footer class="lu_footer-mobile">
+
+    <div class="lu_footer-mobile-logo-holder">
+      <a href="home.html"><img src="images/luuxx-logo-2-footer.svg" alt="LUUXX Logo" class="lu_footer-logo-mobile"></a>
+      <a href="home.html"><img src="images/luuxx-logo-2-footer-hover.svg" alt="LUUXX Logo" class="lu_footer-logo-mobile lu_logo-hover"></a>
+    </div>
+    <div class="lu_footer-mobile-logo-holder">
+      <a href="https://cedia.net/"><img src="images/cedia-member-logo-color.svg" alt="Cedia Member Logo" class="lu_footer-logo-mobile cedia-member-mobile"></a>
+    </div>
+
+    <p class="lu_address-mobile">Birch House,<br>
+      Wetherby Road,<br>
+      Scarcroft,<br>
+      Leeds,<br>
+      Yorkshire,<br>
+      LS14 3BR
+    </p>
+
+    <hr class="lu_footer-mobile-line">
+
+    <p class="lu_contact-mobile"><a href="tel:0113 873 0305">0113 873 0305</a></p>
+    <p class="lu_contact-mobile"><a href="mailto:sales@luuxx.co.uk">sales@luuxx.co.uk</a></p>
+
+    <hr class="lu_footer-mobile-line">
+
+    <div class="lu_social-holder-mobile">
+      <i class="fab fa-facebook-f lu_social"></i>
+      <i class="fab fa-twitter lu_social"></i>
+      <i class="fab fa-instagram lu_social"></i>
+      <i class="fab fa-linkedin lu_social"></i>
+      <i class="fab fa-pinterest-p lu_social"></i>
+      <i class="fab fa-houzz lu_social"></i>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="javascript/globals.js" type="text/javascript"></script>
+  <script src="javascript/gallery.js" type="text/javascript"></script>
+
+</body>
+
+</html>

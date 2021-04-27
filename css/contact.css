@@ -1,0 +1,168 @@
+body {
+  background-image: url("../images/backgrounds/luuxx-navy-name.svg");
+}
+
+.contact-title {
+  width: 100%;
+  text-align: center;
+  color: #997E49;
+  line-height: 120px;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.contact-information {
+  padding: 0 5%;
+  width: 90%;
+  text-align: center;
+  color: #c7d7df;
+  line-height: 36px;
+  margin: 0;
+  font-size: 18px;
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+}
+
+.contact-section {
+  padding: 6vh 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-section * {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.contact-section a {
+  color: #997E49;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.contact-section a:hover {
+  color: #FFDF80;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.contact {
+  color: #c7d7df !important;
+}
+
+.contact-grid-item {
+  min-height: calc(80vh - 110px);
+}
+
+.contact-form-holder {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+
+.lu_information-line {
+  width: 60%;
+  margin: 60px auto;
+  border: 0;
+  border-bottom: 0.5px solid #997E49;
+}
+
+.contact-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-inner-grid div {
+  min-height: 300px;
+}
+
+.address {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+.social-contact {
+  width: 60px;
+  height: 60px;
+  border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+  background-color: #997E49;
+  display: inline-block;
+  margin: 15px;
+  color: #081B2C;
+  transition: .5s;
+  padding: 0;
+}
+
+.social-contact:hover {
+  background-color: #FFDF80;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.social-contact i {
+  line-height: 60px;
+  font-size: 20px;
+  color: #081B2C;
+}
+
+.contact-form-holder p {
+  color: #997E49;
+}
+
+.map-holder {
+  height: 300px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 2200px) {
+  .social-contact {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  .social-contact i {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .contact-section {
+    padding: 5vh 5vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-section {
+    background-attachment: scroll;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 2vh 2vw;
+  }
+
+  .contact-section * {
+    font-size: 20px;
+  }
+
+  .contact-grid-item {
+    min-height: calc(30vh - 110px);
+  }
+
+  .contact-inner-grid {
+    grid-template-columns: 1fr;
+  }
+}

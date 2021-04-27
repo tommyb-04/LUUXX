@@ -1,0 +1,164 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/backgrounds/luuxx-nude-name.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p, label {
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 200%;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #c7d7df;
+  width: 100%;
+  position: relative;
+  color: #8eaebf;
+}
+
+.load-overlay {
+  background-color: tomato;
+  opacity: 90%;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  display: block;
+  top: 0;
+  z-index: 10;
+}
+
+.in-text-link {
+  color: inherit;
+  font-weight: 300;
+  font-style: italic;
+  transition: color .5s;
+  letter-spacing: 0.25px;
+}
+
+.in-text-link:hover, .in-text-link:focus {
+  color: #997E49;
+  transition: color .5s;
+}
+
+.small {
+  font-variant: small-caps;
+  font-size: 90% !important;
+}
+
+/* Scroll Button */
+
+.scroll-btn {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto 40px auto;
+  position: absolute;
+  font-size: 20px;
+  line-height: 50px;
+  height: 50px;
+  background-color: #997E49;
+  color: #081B2C;
+  width: 50px;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+  color: #081B2C;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.scroll-btn:hover {
+  background-color: #FFDF80;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#lu_scroll-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+  background-color: #0D2D49;
+  position: fixed;
+  bottom: 7.5%;
+  right: 5%;
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+  display: none;
+  transition: all 0.8s;
+}
+
+#lu_scroll-top p {
+  line-height: 50px;
+  font-size: 10px;
+  margin: 0;
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+}
+
+#lu_scroll-top:hover {
+  cursor: pointer;
+  background-color: rgba(13, 45, 73, 0.5);
+  color: #fff;
+  transition: all 0.8s;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+
+  .scroll-btn {
+    margin: auto auto 10px auto;
+    font-size: 15px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+  }
+}

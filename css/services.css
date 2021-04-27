@@ -1,0 +1,371 @@
+
+/* Service Selection Grid */
+.lu_selection-header {
+  height: calc(100vh - 110px);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-color: #081B2C;
+}
+
+.lu_selection-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
+  height: 100%;
+  grid-gap: 5px;
+}
+
+.lu_selection-grid-item {
+  font-size: 30px;
+  text-align: center;
+  transition: .5s;
+  position: relative;
+}
+
+.service-home-cinema::before {
+  background-image: url("../images/800x800/service-home-cinema.webp");
+}
+
+.service-audio-visual::before {
+  background-image: url("../images/800x800/service-audio-visual.webp");
+}
+
+.service-home-automation::before {
+  background-image: url("../images/800x800/service-home-automation-3.webp");
+}
+
+.service-intelligent-lighting::before {
+  background-image: url("../images/800x800/service-intelligent-lighting.webp");
+}
+
+.service-automated-shading::before {
+  background-image: url("../images/800x800/service-automated-shading.webp");
+}
+
+.service-outdoor-audio::before {
+  background-image: url("../images/800x800/service-outdoor-audio-2.webp");
+}
+
+.service-hifi::before {
+  background-image: url("../images/800x800/service-hifi.webp");
+}
+
+.service-networks-wifi::before {
+  background-image: url("../images/800x800/service-networks-wifi.webp");
+}
+
+/* All Grid Items */
+.lu_selection-grid-item::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .8s;
+  opacity: 0.5;
+}
+
+.lu_selection-grid-item p {
+  color: #997E49;
+  opacity: 0.8;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  width: 80%;
+  letter-spacing: .05em;
+  transition: .5s;
+  margin: 0;
+}
+
+.lu_selection-grid-item button {
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  width: 40%;
+  padding: 2%;
+  border: 2px solid #997E49;
+  background-color: transparent;
+  color: #997E49;
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  transition: .5s;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.lu_selection-grid-item button:focus {
+  outline: none;
+}
+
+.lu_selection-grid-item button:hover {
+  cursor: pointer;
+  background-color: #997E49;
+  color: #fff;
+}
+
+.lu_selection-grid-item:hover::before {
+  opacity: 0.1;
+  transition: .8s;
+}
+
+.lu_selection-grid-item:hover p {
+  opacity: 1;
+}
+
+.lu_selection-grid-item:hover button {
+  opacity: 1;
+  transition: .5s;
+}
+
+.lu_selection-grid-item:first-child {
+  border-left: 0;
+}
+
+/* Information Section */
+.lu_service-information-section {
+  padding: 10vh 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.lu_service-information-child {
+  padding: 0 5vw;
+  position: relative;
+  min-height: 40vh;
+}
+
+.lu_service-information-child * {
+  margin: 0;
+}
+
+.lu_service-information-child p, .lu_service-information-child h4 {
+  margin-bottom: 20px;
+}
+
+.lu_service-information-child {}
+
+.lu_service-information-text {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.lu_service-information-text h4 {
+  color: #997E49;
+}
+
+.lu_information-line {
+  width: 50%;
+  margin: 30px auto;
+  border: 0;
+  border-bottom: 0.5px solid #0D2D49;
+}
+
+.lu_information-line-left {
+  width: 100%;
+  margin: 30px 0 30px -20vw;
+  border: 0;
+  border-bottom: 0.5px solid #0D2D49;
+}
+
+.lu_service-information {
+  height: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Standard Package Setup*/
+.service-standard {
+  width: 100%;
+  display: none;
+}
+
+.service-standard * {
+  color: #0d2d49;
+}
+
+.lu_information-line-splitter {
+  width: 20%;
+  margin: 30px auto;
+  border: 0;
+  border-bottom: 0.5px solid #0D2D49;
+}
+
+/* Individual Services */
+.service-box {
+  width: 100%;
+  display: none;
+}
+
+.service-box p, .service-box h4 {
+  width: 50%;
+  margin: 15px auto;
+}
+
+.lu_subtitle {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.service-small-text {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.lu_service-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  min-height: 40vh;
+  position: relative;
+}
+
+.lu_service-image-grid div {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.service-img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show-service {
+  display: block;
+}
+
+@media screen and (max-width: 1600px) {
+  .service-image {
+    width: 35%;
+  }
+
+  .service-image-grid {
+    width: 35%;
+    grid-gap: 10px;
+  }
+
+  .service-text {
+    width: calc(65% - 10%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* Information Section */
+  .lu_service-information-section {
+    grid-template-columns: 1fr;
+    background-attachment: scroll;
+    grid-gap: 60px;
+    padding: 5vh 10vw;
+  }
+
+  .lu_service-information-child {
+    min-height: 40vh;
+  }
+
+  .lu_service-information-text {
+    width: 100%;
+  }
+
+  .lu_service-image-grid {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  .service-img {
+    height: 100%;
+  }
+
+  .lu_selection-grid {
+    grid-template-columns: auto auto;
+    grid-gap: 3px;
+  }
+
+  .lu_selection-grid-item::before {
+    opacity: 0.3;
+  }
+
+  .lu_selection-grid-item p, .lu_selection-grid-item button {
+    opacity: 1;
+  }
+
+  .lu_selection-grid-item p {
+    font-size: 25px;
+  }
+
+  .lu_selection-grid-item button {
+    top: 68%;
+    font-size: 15px;
+  }
+
+  .service-box p, .service-box h4 {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .lu_information-line {
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Header Section */
+  .lu_selection-header {
+    height: calc(100vh - 80px);
+  }
+
+  /* Information Section */
+  .lu_service-information-child {
+    min-height: 40vh;
+  }
+
+  .lu_selection-grid {
+    grid-template-columns: auto auto;
+    grid-gap: 3px;
+  }
+
+  .lu_selection-grid-item p {
+    font-size: 16px;
+    top: 30%;
+  }
+
+  .lu_selection-grid-item button {
+    width: 70%;
+    padding: 2%;
+    font-size: 14px;
+    top: 70%;
+  }
+}
