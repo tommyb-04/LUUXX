@@ -51,6 +51,29 @@ p {
   margin-top: 0 !important;
 }
 
+.view-site-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 66.666px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background 0.5s;
+}
+
+.button-text {
+  font-size: 20px !important;
+  line-height: 66.666px !important;
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+.view-site-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background 0.5s;
+}
+
 @media screen and (max-width: 1024px) {
   .countdown-logo {
     width: 50%;
