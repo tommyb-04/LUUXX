@@ -60,15 +60,60 @@ footer {
 }
 
 .load-overlay {
-  background-color: tomato;
-  opacity: 90%;
-  position: fixed;
+  background-color: #081B2C;
   height: 100vh;
-  width: 100vw;
-  padding: 100px;
-  display: block;
+  position: fixed;
   top: 0;
+  width: 100vw;
   z-index: 10;
+}
+
+.load-overlay-content {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.load-rect {
+  width: 300px;
+  height: 100px;
+  margin: 50px;
+}
+
+.load-logo {
+  width: 100%;
+}
+
+.loading-text-bounce {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: #997e49;
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  animation: example 2s infinite;
+}
+
+@keyframes example {
+  from {
+    color: #997e49;
+    opacity: 1;
+  }
+
+  50% {
+    color: #ffdf80;
+    opacity: 0;
+  }
+
+  to {
+    color: #997e49;
+    opacity: 1;
+  }
 }
 
 .in-text-link {
@@ -90,7 +135,6 @@ footer {
 }
 
 /* Scroll Button */
-
 .scroll-btn {
   top: 0;
   left: 0;
