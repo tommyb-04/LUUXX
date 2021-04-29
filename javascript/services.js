@@ -1,10 +1,10 @@
 // Scroll the information section into view on service page
 
-$(".service-button").click(function() {
-  document.getElementById("lu_service-information-section").scrollIntoView();
-});
-$("#lu_scroll-button").click(function() {
-  document.getElementById("lu_service-information-section").scrollIntoView();
+$("#lu_scroll-button").add(".service-button").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#lu_service-information-section").offset().top
+  }, 500);
+  return false;
 });
 
 // Hide and show the relevant service depending on which button is pressed
