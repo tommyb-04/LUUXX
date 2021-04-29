@@ -4,7 +4,7 @@ $(window).on("load", function() {
   setTimeout(
     function() {
       $(".load-overlay").fadeOut();
-    }, 300);
+    }, 1000);
 });
 
 // Loading Logo Bounce
