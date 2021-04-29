@@ -276,6 +276,10 @@
     -webkit-background-size: auto;
   }
 
+  .information-section-image {
+    background-attachment: scroll;
+  }
+
   .lu_header-text {
     width: 60%;
   }
