@@ -1,14 +1,3 @@
-$(document).ready(function() {
-    var isshown = localStorage.getItem('isshown');
-    if (isshown == null) {
-        localStorage.setItem('isshown', 1);
-        // Show popup here
-        $("#dialog-box").css("display", "block");
-    }
-    $("#ok-button").click(function() {
-      $("#dialog-box").fadeOut();
-    });
-});
 
 // Scroll the information section into view on home page
 
