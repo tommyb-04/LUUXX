@@ -3,8 +3,11 @@
 /* Multi Use */
 .header, .information-image {
   background-image: url("../images/2400x1600/background-1.webp");
-  background-position: center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 /* Header Section with Navy Diagonal Overlay */
@@ -14,9 +17,6 @@
   color: #fff;
   position: relative;
   background-attachment: fixed;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
 }
 
 .header-overlay {
@@ -79,8 +79,6 @@
 }
 
 .information-image {
-  height: 100%;
-  width: 100%;
   background-attachment: scroll;
   -o-background-size: auto;
   -moz-background-size: auto;
@@ -187,10 +185,6 @@
   /* Information Section */
   .information-section {
     grid-template-columns: 2fr 3fr;
-    background-attachment: scroll;
-  }
-
-  .information-image {
     background-attachment: scroll;
   }
 }
