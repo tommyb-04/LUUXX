@@ -196,6 +196,9 @@ footer {
   body {
     background-attachment: scroll;
     background-repeat: repeat;
+    -o-background-size: auto;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
   }
 
   .scroll-btn {

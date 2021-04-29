@@ -268,9 +268,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .blue-background {
+  .blue-background, .information-section-image-overlay {
     background-attachment: scroll;
     background-repeat: repeat;
+    -o-background-size: auto;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
   }
 
   .lu_header-text {

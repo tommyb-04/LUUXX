@@ -3,7 +3,7 @@
 /* Multi Use */
 .header, .information-image {
   background-image: url("../images/2400x1600/background-1.webp");
-  background-position: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -79,12 +79,7 @@
 }
 
 .information-image {
-  height: 100%;
-  width: 100%;
   background-attachment: scroll;
-  -o-background-size: auto;
-  -moz-background-size: auto;
-  -webkit-background-size: auto;
 }
 
 .information-text {
