@@ -539,7 +539,7 @@
 
   /* Header and Navigation */
 
-  .lu_package-information-image, .lu_package-information-image-media {
+  .lu_selection-header, .media-header, .lu_package-information-image, .lu_package-information-image-media {
     background-attachment: scroll;
   }
 
