@@ -59,6 +59,22 @@ footer {
   color: #8eaebf;
 }
 
+.serif {
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  font-size: 14px;
+}
+
+.sans-serif {
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 200%;
+  font-size: 14px;
+}
+
 .load-overlay {
   background-color: #081B2C;
   height: 100vh;

@@ -3,7 +3,7 @@
   width: 100%;
   color: #fff;
   position: relative;
-  background-image: url("../images/2400x1600/luuxx-screen-cinema.webp");
+  background-image: url("../images/2400x1600/background-4.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right bottom, rgba(8, 27, 44, 0.90) 50%, rgba(8, 27, 44, 0.855) 50%);
+  background: linear-gradient(to right bottom, rgba(8, 27, 44, 0.40) 50%, rgba(8, 27, 44, 0.355) 50%);
 }
 
 .lu_header-text {
@@ -99,7 +99,7 @@
 }
 
 .information-section-image {
-  background-image: url("../images/2400x1600/luuxx-screen-cinema.webp");
+  background-image: url("../images/2400x1600/background-4.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,6 +267,70 @@
   display: none;
 }
 
+.information-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 140px 80px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-grid-child {
+  min-height: 35vh;
+  text-align: left;
+}
+
+.middle-grid-text {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.mobile-text {
+  display: none;
+}
+
+.branding-image, .example-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.branding-image {
+  background-image: url("../images/book-3.jpg");
+}
+
+.example-image {
+  background-image: url("../images/2400x1600/projects/project-3-1.webp");
+}
+
+.contact-div {
+  background-color: rgba(13, 45, 73, 0.9);
+  width: 50%;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.contact-div-pt-2 {
+  background-color: rgba(13, 45, 73, 0.8);
+  width: 50%;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 2.5vh auto;
+}
+
+.contact-div p, .contact-div-pt-2 p {
+  margin: 0;
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
   .blue-background, .information-section-image-overlay {
     background-attachment: scroll;
@@ -323,6 +387,31 @@
 
   .brands-grid-holder::-webkit-scrollbar, .brands-grid::-webkit-scrollbar {
     display: none;
+  }
+
+  .information-bottom-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .about-grid-child {
+    min-height: 20vh;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+  }
+
+  .contact-div, .contact-div-pt-2 {
+    width: calc(100% - 50px);
+  }
+
+  .contact-div-pt-2 {
+    margin: 0 auto 2.5vh auto;
   }
 }
 

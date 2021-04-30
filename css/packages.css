@@ -34,8 +34,6 @@
   line-height: 40px;
   color: #997E49;
   margin: 0;
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 300;
   padding-left: 40px;
 }
@@ -73,8 +71,6 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 30px;
   width: 80%;
@@ -91,8 +87,6 @@
   border: 2px solid white;
   background-color: transparent;
   color: white;
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   transition: .5s;
@@ -269,8 +263,6 @@
   line-height: 60px;
   margin: 0 auto;
   border: 0;
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   text-align: center;
@@ -389,8 +381,6 @@
 }
 
 .package-price {
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
@@ -399,8 +389,6 @@
 }
 
 .package-enquire {
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
@@ -411,12 +399,11 @@
 }
 
 .package-small-text {
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  width: 100%;
-  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  text-align: left;
 }
 
 #package-bronze .package-enquire {
