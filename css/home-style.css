@@ -172,6 +172,10 @@
 @media screen and (max-width: 1024px) {
 
   /* Header Section */
+  .header {
+    background-attachment: scroll;
+  }
+
   .lu_header-text {
     width: 60%;
   }
