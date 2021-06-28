@@ -1,5 +1,18 @@
 body {
   background-image: url("../images/backgrounds/luuxx-navy-name.svg");
+  background-color: #081b2c;
+}
+
+/* Pipedrive Form */
+.pipedriveWebForms {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  padding: 50px 0;
+}
+
+.pipedriveWebForms iframe {
+  width: 100%;
+  max-width: 100% !important;
 }
 
 .contact-title {
@@ -15,23 +28,23 @@ body {
 
 .contact-information {
   padding: 0;
-  width: 20%;
+  width: 40%;
   text-align: left;
   color: #c7d7df;
   line-height: 36px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   font-size: 18px;
 }
 
 .contact-section {
-  padding: 6vh 10vw;
+  padding: 1vh 3vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
 .contact-section * {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contact-section a {
@@ -51,7 +64,7 @@ body {
 }
 
 .contact-grid-item {
-  min-height: calc(40vh - 110px);
+  min-height: calc(20vh - 110px);
 }
 
 .contact-form-holder {
@@ -134,10 +147,20 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .pipedriveWebForms iframe {
+    width: 100%;
+    max-width: 70% !important;
+    padding: 0 15%;
+  }
+
+  .contact-information {
+    width: 80%;
+  }
+
   .contact-section {
     background-attachment: scroll;
     grid-template-columns: 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
     padding: 2vh 2vw;
   }
 
@@ -146,7 +169,7 @@ body {
   }
 
   .contact-grid-item {
-    min-height: calc(30vh - 110px);
+    min-height: calc(20vh - 110px);
   }
 
   .contact-inner-grid {
