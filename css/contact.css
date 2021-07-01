@@ -17,12 +17,7 @@ body {
 
 .powr-microblog {
   width: 80vw;
-  height: 100vh;
   margin: 10vh 10vw;
-}
-
-.powr-microblog iframe {
-  height: 100vh !important;
 }
 
 .contact-title {
