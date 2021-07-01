@@ -6,13 +6,23 @@ body {
 /* Pipedrive Form */
 .pipedriveWebForms {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(142, 174, 191, 0.5) !important;
   padding: 50px 0;
 }
 
 .pipedriveWebForms iframe {
   width: 100%;
   max-width: 100% !important;
+}
+
+.powr-microblog {
+  width: 80vw;
+  height: 100vh;
+  margin: 10vh 10vw;
+}
+
+.powr-microblog iframe {
+  height: 100vh !important;
 }
 
 .contact-title {
@@ -127,6 +137,58 @@ body {
   font-size: 20px;
 }
 
+/* Contact Thank You Page */
+
+.thank-you-holder {
+  height: 80vh;
+  margin: 10vh 10vw;
+  background-color: rgba(13,45,73,0.1);
+}
+
+.thank-you-text {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #997E49;
+  width: 30vw;
+}
+
+.contact-thanks-title {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.back-home {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.back-home-button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #997E49;
+  color: #997E49;
+  font-family: garamond-premier-pro, serif;
+  font-weight: 500;
+  transition: all 0.5s;
+  padding: 15px 30px;
+}
+
+.back-home-button:hover {
+  background-color: #997E49;
+  border: 1px solid #997E49;
+  color: #0D2D49;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 2200px) {
   .social-contact {
     width: 40px;
@@ -174,5 +236,9 @@ body {
 
   .contact-inner-grid {
     grid-template-columns: 1fr;
+  }
+
+  .thank-you-text {
+    width: 70vw;
   }
 }
