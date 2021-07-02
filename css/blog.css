@@ -29,6 +29,8 @@ body {
   width: 50vw;
   text-align: left;
   margin: 5vh 25vw 0 25vw;
+  color: #997E49;
+  letter-spacing: 1px;
 }
 
 .powr-microblog {
