@@ -18,6 +18,7 @@ body {
 .powr-microblog {
   width: 80vw;
   margin: 10vh 10vw;
+  border: 1px solid red;
 }
 
 .contact-title {
