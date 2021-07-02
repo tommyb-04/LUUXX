@@ -27,7 +27,6 @@ body {
 .powr-microblog {
   width: 60vw;
   margin: 5vh 20vw;
-  height: 100vh;
 }
 
 @media screen and (max-width: 1024px) {
