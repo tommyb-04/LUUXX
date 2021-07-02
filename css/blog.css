@@ -24,9 +24,16 @@ body {
   font-size: 18px;
 }
 
+.search-title {
+  font-size: 12px;
+  width: 60vw;
+  text-align: left;
+  margin: 5vh 20vw 0 20vw;
+}
+
 .powr-microblog {
   width: 60vw;
-  margin: 5vh 20vw;
+  margin: 0 20vw 5vh 20vw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -35,9 +42,16 @@ body {
     width: 80%;
   }
 
+  .search-title {
+    font-size: 10px;
+    width: 80vw;
+    text-align: left;
+    margin: 5vh 10vw 0 10vw;
+  }
+
   .powr-microblog {
     width: 80vw;
-    margin: 5vh 10vw;
+    margin: 0 10vw 5vh 10vw;
   }
 
 }
