@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: garamond-premier-pro, serif;
+  font-family: garamond-premier-pro-caption, serif;
   font-style: normal;
 }
 
@@ -170,6 +170,7 @@ footer {
   color: #081B2C;
   cursor: pointer;
   transition: .5s;
+  z-index: 2;
 }
 
 .scroll-btn:hover {
