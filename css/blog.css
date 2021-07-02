@@ -1,0 +1,44 @@
+body {
+  background-image: url("../images/backgrounds/luuxx-navy-name.svg");
+  background-color: #081b2c;
+}
+
+.contact-title {
+  width: 80%;
+  text-align: center;
+  color: #997E49;
+  line-height: 120px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.contact-information {
+  padding: 0;
+  width: 40%;
+  text-align: left;
+  color: #c7d7df;
+  line-height: 36px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+}
+
+.powr-microblog {
+  width: 60vw;
+  margin: 5vh 20vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .contact-information {
+    width: 80%;
+  }
+
+  .powr-microblog {
+    width: 80vw;
+    margin: 5vh 10vw;
+  }
+
+}
