@@ -72,6 +72,7 @@ body {
 
 .contact-grid-item {
   min-height: calc(20vh - 110px);
+  width: 100%;
 }
 
 .contact-form-holder {
