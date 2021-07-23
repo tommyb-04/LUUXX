@@ -15,17 +15,6 @@ body {
   max-width: 100% !important;
 }
 
-.kRSyyf {
-  background: transparent !important;
-  border: 1px solid tomato !important;
-}
-
-.powr-microblog {
-  width: 80vw;
-  margin: 10vh 10vw;
-  border: 1px solid red;
-}
-
 .contact-title {
   width: 80%;
   text-align: center;
@@ -48,6 +37,13 @@ body {
 }
 
 .contact-section {
+  padding: 1vh 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-social-grid {
   padding: 1vh 3vw;
   display: grid;
   grid-template-columns: 1fr;
